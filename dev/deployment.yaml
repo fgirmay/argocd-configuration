@@ -13,7 +13,7 @@ spec:
           app: equb
       spec:
         containers:
-          -name: equb
-          image: fissehaye/equb:latest
-          ports:
-            -containerPort: 8080
+          - name: equb
+            image: fissehaye/equb:latest
+            ports:
+              - containerPort: 8080
