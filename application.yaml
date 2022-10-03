@@ -13,9 +13,10 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: equb
-syncPolicy:
-  syncOptions: -CreateNamespace=true
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
 
-  automated:
-    selfHeal: true
-    prune: true
+    automated:
+      selfHeal: true
+      prune: true
